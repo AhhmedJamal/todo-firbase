@@ -86,7 +86,7 @@ export default function App() {
   return (
     <div className="w-[93%] sm:w-[80%]  m-[auto] flex flex-col items-center mt-[60px] ">
       <h1 className="text-white text-[40px] font-bold mb-10">ToDo</h1>
-      <div className="h-[50px] flex justify-center  items-center w-[100%] sm:w-[80%]  bg-neutral-600 px-5 py-12">
+      <div className="h-[50px] flex justify-center rounded  items-center w-[100%] sm:w-[80%]  bg-neutral-600 px-5 py-12">
         <input
           className="h-[48px] w-[90%] outline-none border-none pl-2 opacity-[0.9] font-bold rounded-tl-[10px] rounded-bl-[10px]"
           type="text"
@@ -119,9 +119,9 @@ export default function App() {
           </button>
         )}
       </div>
-      <div className="w-[100%] sm:w-[80%]  bg-neutral-600 mt-5 p-5 text-white font-bold flex flex-col justify-center items-center">
+      <div className="w-[100%] sm:w-[80%] rounded bg-neutral-600 mt-5 p-5 text-white font-bold flex flex-col justify-center items-center">
         {!loading ? (
-          <div className="w-[100%]">
+          <div className="w-[100%] flex flex-col ">
             {tasks.length !== 0 ? (
               <ul>
                 {tasks.map((task: propsTask) => {
@@ -155,7 +155,7 @@ export default function App() {
                 })}
               </ul>
             ) : (
-              <h1 className="ml-[20%] text-[25px]">Not Found Tasks !</h1>
+              <h1 className="m-[auto] text-[25px]">Not Found Tasks !</h1>
             )}
           </div>
         ) : (
