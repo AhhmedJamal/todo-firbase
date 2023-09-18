@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import React from 'react'
+import React from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-orange-600" suppressHydrationWarning={true}>
+      <body className="bg-neutral-100" suppressHydrationWarning={true}>
         {children}
       </body>
     </html>

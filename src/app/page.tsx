@@ -85,7 +85,7 @@ export default function App() {
   }, []);
   return (
     <div className="w-[93%] sm:w-[80%]  m-[auto] flex flex-col items-center mt-[60px] ">
-      <h1 className="text-white text-[40px] font-bold mb-10">ToDo</h1>
+      <h1 className="text-neutral-600 text-[40px] font-bold mb-10">ToDo</h1>
       <div className="h-[50px] flex justify-center rounded  items-center w-[100%] sm:w-[80%]  bg-neutral-600 px-5 py-12">
         <input
           className="h-[48px] w-[90%] outline-none border-none pl-2 opacity-[0.9] font-bold rounded-tl-[10px] rounded-bl-[10px]"
@@ -112,7 +112,7 @@ export default function App() {
             onClick={() => {
               postData();
             }}
-            className="bg-orange-600 hover:bg-orange-700 transition-all duration-200 
+            className="bg-neutral-400 hover:bg-neutral-500 transition-all duration-200 
                     text-white font-bold p-3 px-[0px] rounded-tr-[10px] rounded-br-[10px] w-[80px]"
           >
             Add
