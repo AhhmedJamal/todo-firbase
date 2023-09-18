@@ -1,4 +1,5 @@
-import { propsAdd } from "@/type/task";
+import { propsAdd } from "@/type/addTask";
+import {  } from "@/type/task";
 
 function AddTask({
   value,

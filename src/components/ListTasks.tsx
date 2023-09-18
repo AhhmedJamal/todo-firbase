@@ -1,4 +1,5 @@
-import { propsList, propsTask } from "@/type/task";
+import { propsList } from "@/type/listTasks";
+import { propsTask } from "@/type/task";
 
 function ListTasks({ loading, tasks, deleteTask, toggles }: propsList) {
   return (
