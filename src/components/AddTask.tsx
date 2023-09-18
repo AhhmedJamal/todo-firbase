@@ -1,5 +1,14 @@
-"use client";
-function AddTask({ value, setValue, postTask, updateTask, ref, id, btn }: any) {
+import { propsAdd } from "@/type/task";
+
+function AddTask({
+  value,
+  setValue,
+  postTask,
+  updateTask,
+  ref,
+  id,
+  btn,
+}: propsAdd) {
   return (
     <div className="h-[50px] flex justify-center rounded  items-center w-[100%] sm:w-[80%]  bg-neutral-600 px-5 py-12">
       <input

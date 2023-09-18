@@ -18,7 +18,7 @@ import ListTasks from "@/components/ListTasks";
 export default function App() {
   const [value, setValue] = useState("");
   const [id, setId] = useState("");
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState<[]>([]);
   const [btn, setBtn] = useState(false);
   const [loading, setLoading] = useState(true);
   const tasksCollectionsRef = collection(db, "todos");

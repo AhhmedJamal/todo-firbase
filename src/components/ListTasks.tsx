@@ -1,6 +1,6 @@
-import { propsTask } from "@/type/task";
+import { propsList, propsTask } from "@/type/task";
 
-function ListTasks({ loading, tasks, deleteTask, toggles }: any) {
+function ListTasks({ loading, tasks, deleteTask, toggles }: propsList) {
   return (
     <div className="w-[100%] sm:w-[80%] rounded bg-neutral-600 mt-5 p-5 text-white font-bold flex flex-col justify-center items-center">
       {!loading ? (
